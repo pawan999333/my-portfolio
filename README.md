@@ -1,3 +1,7 @@
+#netify host url 
+https://666a773b3bf1508b6df2b1ad--euphonious-fairy-8828de.netlify.app/
+
+
 # Portfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
