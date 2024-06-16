@@ -1,5 +1,5 @@
 #netify host url 
-https://666a773b3bf1508b6df2b1ad--euphonious-fairy-8828de.netlify.app/
+https://666eef1e0c30bbfd1a23693d--euphonious-fairy-8828de.netlify.app/
 
 
 # Portfolio
