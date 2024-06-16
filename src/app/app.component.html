@@ -1,12 +1,35 @@
  <nav class="navbar header navbar-expand-lg navbar-light bg-light pt-3 pb-3">
-  <a class="navbar-brand col-lg-8 col-md-6 col-sm-6" href="#">
-    <img style="border-radius: 50%;" src="../../assets/pawan.jpeg" class="col-1" alt=""><span style="font-weight: bold;">PAWAN KUMAR SHARMA</span>
-  </a>
-  <button class="navbar-toggler col-lg-8 col-md-4 col-sm-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon">Home</span>
-  </button>
 
-  <div class="collapse navbar-collapse col-lg-4 col-md-6 col-sm-6" id="navbarSupportedContent">
+  <a class="navbar-brand nameSection col-lg-6 col-md-6 col-sm-6" href="#" style="width:50% !important;">
+    <img style="border-radius: 50%;" src="../../assets/pawan.jpeg" class="col-2" alt=""><span style="font-weight: bold;">PAWAN KUMAR SHARMA</span>
+  </a>
+  <!-- <button class="navbar-toggler col-lg-8 col-md-4 col-sm-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+
+  <!-- <li class="nav-item dropdown"> -->
+    <a class="nav-link  navbar-toggler dropdown-toggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" data-toggle="collapse" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+
+    </a>
+    <div class="dropdown-menu" >
+
+      <a class="nav-link" href="#" [ngClass]="{'active': activeLink === 'home'}"
+      (click)="setActiveLink('home')">HOME <span class="sr-only"></span></a>
+      <a class="nav-link" href="#about" [ngClass]="{'active': activeLink === 'about'}"
+      (click)="setActiveLink('about')">ABOUT</a>
+      <a class="nav-link" href="#projects"
+        [ngClass]="{'active': activeLink === 'projects'}"
+        (click)="setActiveLink('projects')">PROJECTS</a>
+
+          <a class="nav-link" href="#contact"
+          [ngClass]="{'active': activeLink === 'contact'}"
+          (click)="setActiveLink('contact')">CONTACT</a>
+
+    </div>
+
+  <!-- </li> -->
+  <div class="collapse navbar-collapse col-lg-6 col-md-6 col-sm-6" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto d-flex justify-content-between col">
       <li class="nav-item col">
         <a class="nav-link" href="#" [ngClass]="{'active': activeLink === 'home'}"
@@ -22,10 +45,11 @@
         (click)="setActiveLink('projects')">PROJECTS</a>
       </li>
       <li class="nav-item col">
-        <a class="nav-link disabled" href="#contact"
+        <a class="nav-link" href="#contact"
         [ngClass]="{'active': activeLink === 'contact'}"
         (click)="setActiveLink('contact')">CONTACT</a>
       </li>
+
     </ul>
 
   </div>

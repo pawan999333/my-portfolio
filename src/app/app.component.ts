@@ -9,7 +9,11 @@ export class AppComponent {
   title = 'portfolio';
   activeLink: string = 'home';
 
+
+
   setActiveLink(link: string) {
     this.activeLink = link;
   }
+
+
 }
